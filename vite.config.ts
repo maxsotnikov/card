@@ -15,6 +15,5 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  // base: '/card/'
 });
 

@@ -9,7 +9,7 @@ function App() {
   return (
     <CardWrapper>
       <Card>
-        <Photo src={image} />
+        <Photo src={image} alt={"image"}/>
         <Text/>
         <Buttons/>
       </Card>
