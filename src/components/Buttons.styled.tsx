@@ -13,7 +13,6 @@ export default Buttons;
 
 const ButtonsWrapper = styled.div`
   display: flex;
-  margin-left: 20px;
   gap: 12px;
 `
 

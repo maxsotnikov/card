@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-function Text () {
+type TextProps = {
+  title: string;
+  description: string;
+}
+
+function Text (props: TextProps) {
   return (
     <TextWrapper>
-      <Title>Headline</Title>
-      <Description>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Description>
+      <Title>{props.title}</Title>
+      <Description>{props.description}</Description>
     </TextWrapper>
   )
 }
@@ -12,11 +17,12 @@ function Text () {
 export default Text;
 
 const TextWrapper = styled.div`
-  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `
 
 const Title = styled.h1`
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 16px;
   color: #000;
